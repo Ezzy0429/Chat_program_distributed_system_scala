@@ -1,0 +1,121 @@
+.background{
+    -fx-background-color:#d9b9b4;
+}
+
+/* For empty placeholder */
+.label {
+    /* -fx-font-size: 15pt; */
+    -fx-font-family: "Microsoft YaHei";
+    -fx-text-fill: black;
+    /* -fx-opacity: 0.5; */
+}
+
+.label-bright {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-text-fill: black;
+    -fx-opacity: 0.1;
+}
+
+.label-header {
+    /* -fx-font-size: 30pt; */
+    -fx-font-family: "Microsoft YaHei";
+    -fx-text-fill: black;
+    /* -fx-opacity: 1; */
+}
+
+
+/* Root layout menu bar color */
+.menu-bar {
+    -fx-background-color: derive(#d3d3d3,50%);
+}
+
+/* Root layout context menu color */
+.context-menu {
+    -fx-background-color: derive(#b3b0b0,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-text-fill: black;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: b3b0b0;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Microsoft YaHei";
+}
+
+
+/* 
+ * Metro style Push Button
+ * Author: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+ .button {
+    -fx-padding: 0 0 0 0;   
+
+    -fx-border-color: #db7768;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+
+    -fx-background-radius: 10;
+    -fx-background-color: #db7768;
+
+    -fx-font-family: "Microsoft Yahei";
+    -fx-font-size: 11pt;
+
+    -fx-text-fill: #ffffff;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #4A0D04;
+    -fx-border-color: #4A0D04;
+}
+
+/* Button onclick effect */
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: #4A0D04;
+
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-border-color: #4A0D04;
+  
+    -fx-text-fill: #ffffff;
+    -fx-rotate: 5;
+}
+
+.button:focused {
+    -fx-border-color: #4A0D04;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+
+    /* -fx-border-style: solid, segments(1, 1);
+    -fx-border-insets: 1 1 1 1, 0; */
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.gridpane{
+    -fx-background-color: black;
+}
